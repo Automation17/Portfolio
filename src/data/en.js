@@ -1,5 +1,6 @@
 export const en = {
   header: {
+    name: "Ahmed Al-Rushdan",
     home: "Home",
     about: "About",
     projects: "Projects",
@@ -15,7 +16,7 @@ export const en = {
   },
   about: {
     title: "About Me",
-    description: "I am a passionate Full-Stack Developer dedicated to creating elegant, high-performance web applications. With expertise in both frontend and backend technologies, I bridge the gap between design and functionality. I thrive in building systems that are not just visually stunning but also technically robust.",
+    description: "A passionate Full-Stack Developer dedicated to creating elegant, high-performance web applications. With expertise in both frontend and backend technologies, I bridge the gap between design and functionality. I thrive in building systems that are visually stunning and technically robust.",
   },
   projects: {
     title: "My Projects",

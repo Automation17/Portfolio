@@ -23,7 +23,7 @@ export default function Header() {
     <header className={`header ${isScrolled ? 'scrolled glass' : ''}`}>
       <div className="header-content">
         <div className="logo">
-          <h2>Portfolio</h2>
+          <h2>{t.header.name}</h2>
         </div>
         
         <nav className={`nav-links ${menuOpen ? 'open glass' : ''}`}>
