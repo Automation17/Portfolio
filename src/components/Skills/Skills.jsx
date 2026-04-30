@@ -1,32 +1,34 @@
 import { useLanguage } from '../../context/LanguageContext';
 import { 
-  SiReact, SiJavascript, SiTypescript, SiHtml5,
-  SiNodedotjs, SiPython, SiMongodb, SiPostgresql,
-  SiGit, SiDocker
+  SiReact, SiJavascript, /*SiTypescript,*/ SiHtml5,
+  SiNodedotjs, SiMongodb, /*SiPostgresql,*/ SiGithub,
+  SiGit, SiDocker, SiCss
 } from 'react-icons/si';
 import './Skills.css';
 
 const frontendSkills = [
   { icon: <SiReact />, name: "React" },
   { icon: <SiJavascript />, name: "JavaScript" },
-  { icon: <SiTypescript />, name: "TypeScript" },
+  // { icon: <SiTypescript />, name: "TypeScript" },
   { icon: <SiHtml5 />, name: "HTML5" },
-  // { icon: <SiCss3 />, name: "CSS3" }
+  { icon: <SiCss />, name: "CSS3" }
 ];
 
 const backendSkills = [
   { icon: <SiNodedotjs />, name: "Node.js" },
-  { icon: <SiPython />, name: "Python" },
+  // { icon: <SiPython />, name: "Python" },
   { icon: <SiMongodb />, name: "MongoDB" },
-  { icon: <SiPostgresql />, name: "PostgreSQL" }
+  // { icon: <SiPostgresql />, name: "PostgreSQL" }
 ];
 
 const toolsSkills = [
   { icon: <SiGit />, name: "Git" },
+  { icon: <SiGithub />, name: "Github" },
   { icon: <SiDocker />, name: "Docker" }
 ];
 
 function SkillCategory({ title, skills }) {
+  return (
   <div className="skill-category glass">
     <h3>{title}</h3>
     <div className="skill-list">
@@ -38,6 +40,7 @@ function SkillCategory({ title, skills }) {
       ))}
     </div>
   </div>
+  );
 }
 
 export default function Skills() {
