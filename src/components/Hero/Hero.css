@@ -16,11 +16,11 @@
 .greeting {
   font-size: 2rem;
   font-weight: 500;
-  color: var(--color-text-dim);
+  color: var(--color-text);
 }
 
 .hero-title .name {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 800;
   background: var(--color-white);
   -webkit-background-clip: text;
