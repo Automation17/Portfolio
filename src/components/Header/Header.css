@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 1.5rem 5%;
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  padding: 1rem 5%;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo h2 {
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--color-gray), var(--color-white));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 1.8rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text-dim);
+  position: relative;
+}
+
+.nav-links a:hover {
+  color: var(--color-text);
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-white);
+  transition: var(--transition);
+}
+
+[dir='rtl'] .nav-links a::after {
+  left: auto;
+  right: 0;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text);
+  font-weight: 600;
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+}
+
+.lang-toggle:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-toggle {
+  display: none;
+  cursor: pointer;
+  color: var(--color-text);
+}
+
+@media (max-width: 768px) {
+  .mobile-toggle {
+    display: block;
+  }
+  
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    clip-path: circle(0% at top right);
+    transition: all 0.4s ease-out;
+  }
+  
+  [dir='rtl'] .nav-links {
+    clip-path: circle(0% at top left);
+  }
+  
+  .nav-links.open {
+    clip-path: circle(150% at top right);
+  }
+
+  [dir='rtl'] .nav-links.open {
+    clip-path: circle(150% at top left);
+  }
+}
