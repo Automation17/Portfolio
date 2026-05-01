@@ -40,5 +40,9 @@ export const ar = {
     send: "إرسال الرسالة",
     sending: "جاري الإرسال...",
     successMessage: "تم إرسال الرسالة بنجاح!",
+  },
+  footer: {
+    copyRight: "جميع الحقوق محفوظة",
+    author: "أحمد الرشدان",
   }
 };

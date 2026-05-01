@@ -40,5 +40,9 @@ export const en = {
     send: "Send Message",
     sending: "Sending...",
     successMessage: "Message sent successfully!",
+  },
+  footer: {
+    copyRight: "All rights reserved",
+    author: "Ahmed Al-Rushdan",
   }
 };
