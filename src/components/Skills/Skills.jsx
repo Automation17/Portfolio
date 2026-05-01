@@ -1,8 +1,8 @@
 import { useLanguage } from '../../context/LanguageContext';
 import { 
   SiReact, SiJavascript, /*SiTypescript,*/ SiHtml5,
-  SiNodedotjs, SiMongodb, /*SiPostgresql,*/ SiGithub,
-  SiGit, SiDocker, SiCss
+  SiExpress, SiMongodb, /*SiPostgresql,*/ SiGithub,
+  SiGit, SiDocker, SiCss, SiPostman
 } from 'react-icons/si';
 import './Skills.css';
 
@@ -15,7 +15,7 @@ const frontendSkills = [
 ];
 
 const backendSkills = [
-  { icon: <SiNodedotjs />, name: "Node.js" },
+  { icon: <SiExpress />, name: "Express" },
   // { icon: <SiPython />, name: "Python" },
   { icon: <SiMongodb />, name: "MongoDB" },
   // { icon: <SiPostgresql />, name: "PostgreSQL" }
@@ -24,6 +24,7 @@ const backendSkills = [
 const toolsSkills = [
   { icon: <SiGit />, name: "Git" },
   { icon: <SiGithub />, name: "Github" },
+  { icon: <SiPostman />, name: "Postman" },
   { icon: <SiDocker />, name: "Docker" }
 ];
 
